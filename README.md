@@ -5,17 +5,18 @@ A small static site published with GitHub Pages. Each chapter has its own page:
 - Chapter 1: `/chapter-1/` (the root URL redirects here)
 - Chapter 2: `/chapter-2/` (a click counter and a show/hide note)
 - Chapter 3: `/chapter-3/` (a calendar that opens to the current month)
+- Chapter 4: `/chapter-4/` (current weather in Warsaw)
 
 ## Starter presets
 
-All JavaScript is kept in [`_lib`](./_lib/README.md). Chapters 2 and 3 load their scripts from there.
+All JavaScript is kept in [`_lib`](./_lib/README.md). Chapters 2–4 load their scripts from there.
 
 ## Preview locally
 
-Run a local server from this directory:
+Run Jekyll from the repository root:
 
 ```sh
-python3 -m http.server 8000
+jekyll serve
 ```
 
-Then visit <http://localhost:8000>. Press `Ctrl+C` to stop the server.
+Then visit <http://localhost:4000>. Press `Ctrl+C` to stop the server. `_config.yml` includes `_lib` so Jekyll serves the JavaScript presets.

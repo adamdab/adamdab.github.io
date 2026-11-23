@@ -43,4 +43,21 @@ a { color: #0969da; }
 .calendar td { height: 3rem; border-top: 1px solid #d8dee4; }
 .calendar td[aria-current="date"] { color: #fff; background: #0969da; border-radius: 50%; }
 
+.weather-card {
+  margin: 2rem 0 1rem;
+  padding: 1.5rem;
+  border: 1px solid #d0d7de;
+  border-radius: .75rem;
+  background: #f6f8fa;
+}
+
+.weather-temperature { margin: 0; font-size: 3.5rem; font-weight: 650; line-height: 1.1; }
+.weather-condition { margin: .4rem 0 1.5rem; color: #57606a; }
+.weather-details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 0; }
+.weather-details div { padding-top: .7rem; border-top: 1px solid #d8dee4; }
+.weather-details dt { color: #57606a; font-size: .875rem; }
+.weather-details dd { margin: .2rem 0 0; font-weight: 600; }
+.weather-time, .weather-credit { color: #57606a; font-size: .875rem; }
+.weather-time { margin: 1.25rem 0 0; }
+
 @media (max-width: 480px) { .page { padding-top: 2rem; } }

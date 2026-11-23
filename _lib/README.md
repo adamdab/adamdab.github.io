@@ -5,5 +5,6 @@ Copy any JavaScript file into your own project. The counter and reveal scripts l
 - `counter.js` adds a click counter.
 - `reveal.js` shows or hides a note.
 - `calendar.js` displays a navigable month calendar.
+- `weather.js` fetches current weather for Warsaw from Open-Meteo.
 
-These files are source examples for students to copy from the repository. The root `.nojekyll` file keeps GitHub Pages from filtering out this underscore-prefixed directory.
+These files are source examples for students to copy from the repository. `_config.yml` tells Jekyll to include this underscore-prefixed directory in the built site.
