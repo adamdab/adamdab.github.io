@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>A small interaction · Adam Dab</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../_lib/counter.js" defer></script>
+  </head>
+  <body>
+    <main class="page">
+      <h1>A small interaction</h1>
+      <p>This button uses JavaScript to keep a simple count.</p>
+      <button class="demo-button" id="count-button" type="button">Clicked <span id="count">0</span> times</button>
+      <h2>A little reveal</h2>
+      <p>Click to show or hide a short note.</p>
+      <button class="demo-button" id="reveal-button" type="button" aria-expanded="false" aria-controls="hidden-note">Show the note</button>
+      <p id="hidden-note" hidden>Thanks for exploring this little preview.</p>
+    </main>
+    <script src="../_lib/reveal.js" defer></script>
+  </body>
+</html>
