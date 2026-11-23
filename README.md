@@ -1,24 +1,21 @@
 # adamdab.github.io
 
-Personal website published with GitHub Pages and the Jekyll Minimal theme.
+A simple static page published with GitHub Pages.
 
-## Customize
+## Edit
 
-- Edit `_config.yml` to change the site title and description.
-- Edit `index.md` to update the homepage content.
+Update `index.html` to change the page.
 
 ## Preview locally
 
-Install Ruby and Bundler, then run these commands from the repository directory:
+Open `index.html` in a browser, or run a local server from this directory:
 
 ```sh
-gem install bundler
-bundle install
-bundle exec jekyll serve
+python3 -m http.server 8000
 ```
 
-Open <http://localhost:4000> in your browser. Jekyll rebuilds the site when you edit its files; press `Ctrl+C` to stop the server. The `Gemfile` uses GitHub Pages' gem so the local preview uses the same Jekyll theme and dependencies as GitHub Pages.
+Then visit <http://localhost:8000>. Press `Ctrl+C` to stop the server.
 
 ## Publish
 
-In the repository settings, open **Pages** and select the branch containing the site files (usually `main`) and the root folder as the publishing source. GitHub Pages builds the Jekyll site automatically after each push.
+GitHub Pages serves `index.html` from the repository root when the root folder is selected as the publishing source in the repository's **Pages** settings.
